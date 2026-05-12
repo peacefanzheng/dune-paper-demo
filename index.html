@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dune Paper — Slow-burning incense paper from the coast</title>
+
+<!-- SEO -->
+<meta name="description" content="Hand-folded incense paper from Long Beach, California. Eight minutes of scent. No wax, no wick, no waste." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href="https://dune.uspouches.store/" />
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+<!-- Open Graph (WhatsApp / Facebook / iMessage preview) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dune Paper — Slow-burning incense paper from the coast" />
+<meta property="og:description" content="Hand-folded incense paper from Long Beach, California. Eight minutes of scent." />
+<meta property="og:url" content="https://dune.uspouches.store/" />
+<meta property="og:site_name" content="Dune Paper" />
+<meta property="og:image" content="https://dune.uspouches.store/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Dune Paper — Slow-burning incense paper from the coast" />
+<meta name="twitter:description" content="Hand-folded incense paper from Long Beach, California. Eight minutes of scent." />
+<meta name="twitter:image" content="https://dune.uspouches.store/og-image.jpg" />
+
+<!-- Theme color for mobile browsers -->
+<meta name="theme-color" content="#E8C896" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Sky → Sand vertical gradient palette */
+    --sky-pale: #B8D9E8;
+    --sky-mid: #94C0D4;
+    --sand-warm: #E8C896;
+    --sand-pale: #F5E8D0;
+    --sand-cream: #FAF1DD;
+    --sand-deep: #D4A85F;
+
+    /* Ink (text & accents) */
+    --ink-deep: #0F2A3F;
+    --ink-mid: #1A3D5C;
+    --ink-soft: #4A6577;
+    --ink-light: #7A95A8;
+
+    /* Accent */
+    --coral: #D87545;
+    --coral-bright: #E88A5C;
+    --coral-deep: #B85A30;
+
+    /* Surfaces */
+    --surface: #FAF1DD;
+    --surface-dim: #F0E2C5;
+    --border: rgba(15, 42, 63, 0.15);
+    --border-strong: rgba(15, 42, 63, 0.25);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter Tight', sans-serif;
+    background: var(--surface);
+    color: var(--ink-deep);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  .serif { font-family: 'Fraunces', serif; }
+
+  /* ===== Top announcement bar ===== */
+  .top-bar {
+    background: var(--ink-deep);
+    color: var(--sand-pale);
+    text-align: center;
+    padding: 9px 16px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .top-bar strong { color: var(--sand-warm); font-weight: 600; }
+  .top-bar .dot { color: var(--ink-light); margin: 0 12px; }
+
+  /* ===== Header ===== */
+  header {
+    background: var(--surface);
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  .brand-mark {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 30, "WONK" 0, "opsz" 144;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 0.08em;
+    color: var(--ink-deep);
+  }
+  .brand-mark em { font-style: italic; font-weight: 400; color: var(--coral); }
+  .brand-tag {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 11px;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+  }
+  nav ul { display: flex; gap: 32px; list-style: none; }
+  nav a {
+    color: var(--ink-mid);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--coral); }
+  .header-actions { display: flex; gap: 16px; align-items: center; }
+  .icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--ink-mid);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 6px 0;
+  }
+  .icon-btn:hover { color: var(--coral); }
+
+  /* ===== Hero ===== */
+  .hero {
+    min-height: calc(100vh - 110px);
+    padding: 80px 48px 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 80% 100%, rgba(216, 117, 69, 0.12) 0%, transparent 55%),
+      linear-gradient(180deg, var(--sky-pale) 0%, var(--sand-warm) 60%, var(--sand-pale) 100%);
+  }
+  /* Sun */
+  .sun {
+    position: absolute;
+    right: 8%;
+    top: 14%;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 240, 200, 1) 0%, rgba(255, 215, 140, 0.6) 30%, rgba(255, 190, 110, 0.25) 60%, transparent 80%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  /* Decorative inner frames */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 28px;
+    border: 1px solid rgba(15, 42, 63, 0.2);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 38px;
+    border: 1px solid rgba(15, 42, 63, 0.1);
+    pointer-events: none;
+    z-index: 1;
+  }
+  /* Horizon line */
+  .horizon-line {
+    position: absolute;
+    left: 38px;
+    right: 38px;
+    top: 44%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(15, 42, 63, 0.2) 50%, transparent 100%);
+    z-index: 1;
+  }
+  .hero-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-text { padding-left: 40px; }
+  .hero-ornament {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .hero-ornament .line {
+    flex: 0 0 48px;
+    height: 1px;
+    background: var(--ink-deep);
+  }
+  .hero-ornament span {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-deep);
+    font-weight: 500;
+  }
+  .hero-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 144;
+    font-weight: 300;
+    font-size: clamp(48px, 6.5vw, 92px);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    color: var(--ink-deep);
+    margin-bottom: 8px;
+  }
+  .hero-title .italic {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--coral-deep);
+    font-variation-settings: "SOFT" 80, "WONK" 1, "opsz" 144;
+  }
+  .hero-sub {
+    font-size: 17px;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    max-width: 460px;
+    margin: 32px 0 40px;
+  }
+  .hero-cta-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--ink-deep);
+    color: var(--sand-pale);
+    border: none;
+    padding: 18px 36px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-primary:hover { background: var(--coral-deep); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink-deep);
+    border: 1px solid var(--ink-deep);
+    padding: 18px 36px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--ink-deep); color: var(--sand-pale); }
+  .hero-marks {
+    display: flex;
+    gap: 48px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(15, 42, 63, 0.2);
+  }
+  .hero-mark-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--coral-deep);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .hero-mark-label {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  /* Hero product visual */
+  .hero-product {
+    position: relative;
+    aspect-ratio: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .paper-stack {
+    position: relative;
+    width: 320px;
+    height: 380px;
+  }
+  /* incense paper booklets, layered */
+  .booklet {
+    position: absolute;
+    width: 180px;
+    height: 260px;
+    background: var(--sand-cream);
+    border: 1px solid var(--ink-deep);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 20px;
+    box-shadow: 0 20px 40px rgba(15, 42, 63, 0.15);
+    transition: transform 0.4s ease;
+  }
+  .booklet-1 {
+    left: 0;
+    top: 60px;
+    transform: rotate(-8deg);
+    background: var(--sand-warm);
+  }
+  .booklet-2 {
+    left: 70px;
+    top: 30px;
+    transform: rotate(2deg);
+    background: var(--sand-cream);
+    z-index: 2;
+  }
+  .booklet-3 {
+    left: 140px;
+    top: 60px;
+    transform: rotate(10deg);
+    background: var(--coral);
+    color: var(--sand-pale);
+  }
+  .paper-stack:hover .booklet-1 { transform: rotate(-12deg) translate(-10px, 0); }
+  .paper-stack:hover .booklet-3 { transform: rotate(14deg) translate(10px, 0); }
+
+  .booklet-top {
+    text-align: center;
+    width: 100%;
+  }
+  .booklet-mark {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+  .booklet-3 .booklet-mark { color: var(--sand-pale); }
+  .booklet-line {
+    width: 32px;
+    height: 1px;
+    background: currentColor;
+    margin: 16px auto;
+    opacity: 0.5;
+  }
+  .booklet-no {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  .booklet-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    margin-top: 4px;
+  }
+  .booklet-bottom {
+    text-align: center;
+    width: 100%;
+  }
+  .booklet-spec {
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 6px;
+  }
+  .booklet-burn {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 12px;
+    opacity: 0.8;
+  }
+
+  .hero-caption {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-align: right;
+    max-width: 200px;
+    line-height: 1.5;
+  }
+  .hero-caption::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--ink-deep);
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+
+  /* ===== Section: How it works ===== */
+  .how {
+    background: var(--surface);
+    padding: 100px 48px;
+    border-top: 1px solid var(--border);
+  }
+  .how-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .section-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+  .section-eyebrow .line {
+    flex: 0 0 36px;
+    height: 1px;
+    background: var(--coral);
+  }
+  .section-eyebrow span {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--coral-deep);
+    font-weight: 500;
+  }
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 144;
+    font-weight: 300;
+    font-size: clamp(36px, 4.5vw, 60px);
+    line-height: 1.05;
+    color: var(--ink-deep);
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: -0.015em;
+  }
+  .section-title .italic {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--coral-deep);
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--ink-soft);
+    max-width: 620px;
+    margin: 0 auto 72px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .how-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+    background: var(--surface-dim);
+  }
+  .how-step {
+    padding: 48px 36px;
+    border-right: 1px solid var(--border);
+    position: relative;
+  }
+  .how-step:last-child { border-right: none; }
+  .how-num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--coral-deep);
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .how-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--ink-deep);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .how-text {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .how-burn-time {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--coral-deep);
+  }
+
+  /* ===== Product Collection ===== */
+  .collection {
+    background: var(--surface-dim);
+    padding: 120px 48px;
+    position: relative;
+  }
+  .collection-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+  .product-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card:hover {
+    border-color: var(--ink-deep);
+    transform: translateY(-4px);
+  }
+  .pc-visual {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .pc-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 70%);
+    pointer-events: none;
+  }
+  .pc-1 .pc-visual { background: linear-gradient(135deg, #E8C896 0%, #D4A85F 100%); }
+  .pc-2 .pc-visual { background: linear-gradient(135deg, #B8D9E8 0%, #7DB5C9 100%); }
+  .pc-3 .pc-visual { background: linear-gradient(135deg, #D87545 0%, #B85A30 100%); }
+  .pc-4 .pc-visual { background: linear-gradient(135deg, #F5E8D0 0%, #E8C896 100%); }
+  .pc-5 .pc-visual { background: linear-gradient(135deg, #4A6577 0%, #1A3D5C 100%); }
+  .pc-6 .pc-visual { background: linear-gradient(135deg, #E88A5C 0%, #D4A85F 100%); }
+
+  .pc-booklet {
+    width: 140px;
+    height: 190px;
+    background: var(--sand-cream);
+    border: 1px solid var(--ink-deep);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 16px;
+    transform: rotate(-3deg);
+    box-shadow: 0 12px 24px rgba(15, 42, 63, 0.2);
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 2;
+  }
+  .product-card:hover .pc-booklet { transform: rotate(0deg) scale(1.04); }
+  .pc-3 .pc-booklet, .pc-5 .pc-booklet { background: var(--sand-pale); }
+  .pc-booklet-top { text-align: center; }
+  .pc-booklet-mark {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ink-deep);
+  }
+  .pc-booklet-line {
+    width: 24px;
+    height: 1px;
+    background: var(--ink-deep);
+    opacity: 0.4;
+    margin: 10px auto;
+  }
+  .pc-booklet-no {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .pc-booklet-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--ink-deep);
+    margin-top: 4px;
+    text-align: center;
+  }
+  .pc-booklet-spec {
+    font-size: 8px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+
+  .pc-info {
+    padding: 24px 28px 28px;
+    border-top: 1px solid var(--border);
+  }
+  .pc-no {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--coral-deep);
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+  }
+  .pc-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--ink-deep);
+    margin-bottom: 8px;
+    letter-spacing: -0.005em;
+  }
+  .pc-notes {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    font-style: italic;
+    font-family: 'Fraunces', serif;
+  }
+  .pc-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .pc-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--ink-deep);
+  }
+  .pc-price .dollar {
+    font-size: 13px;
+    color: var(--coral-deep);
+    vertical-align: top;
+    margin-right: 2px;
+  }
+  .pc-price .count {
+    font-size: 11px;
+    color: var(--ink-light);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-left: 8px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+  }
+  .pc-add {
+    background: transparent;
+    color: var(--ink-deep);
+    border: 1px solid var(--ink-deep);
+    padding: 9px 18px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .pc-add:hover { background: var(--ink-deep); color: var(--sand-pale); }
+
+  /* ===== Brand Story Section ===== */
+  .story {
+    background: var(--ink-deep);
+    color: var(--sand-pale);
+    padding: 120px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .story::before {
+    content: '';
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(232, 138, 92, 0.15) 0%, transparent 70%);
+  }
+  .story-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .story .section-eyebrow span { color: var(--sand-warm); }
+  .story .section-eyebrow .line { background: var(--sand-warm); }
+  .story-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 144;
+    font-weight: 300;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.1;
+    color: var(--sand-pale);
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.015em;
+  }
+  .story-title .italic {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--sand-warm);
+  }
+  .story-body {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--sand-pale);
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 56px;
+  }
+  .story-body p { margin-bottom: 24px; }
+  .story-body em {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--sand-warm);
+  }
+  .story-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-top: 56px;
+    border-top: 1px solid rgba(245, 232, 208, 0.15);
+  }
+  .story-pillar { text-align: center; }
+  .pillar-num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--sand-warm);
+    font-size: 14px;
+    margin-bottom: 12px;
+    letter-spacing: 0.18em;
+  }
+  .pillar-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--sand-pale);
+    margin-bottom: 10px;
+  }
+  .pillar-text {
+    font-size: 14px;
+    color: rgba(245, 232, 208, 0.7);
+    line-height: 1.7;
+  }
+
+  /* ===== Newsletter ===== */
+  .newsletter {
+    background: var(--surface);
+    padding: 100px 48px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+  .nl-inner { max-width: 580px; margin: 0 auto; }
+  .nl-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--ink-deep);
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .nl-title .italic { font-style: italic; color: var(--coral-deep); }
+  .nl-sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+  .nl-form {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--ink-deep);
+    background: var(--sand-pale);
+  }
+  .nl-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 16px 20px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    color: var(--ink-deep);
+    outline: none;
+  }
+  .nl-input::placeholder { color: var(--ink-light); }
+  .nl-btn {
+    background: var(--ink-deep);
+    color: var(--sand-pale);
+    border: none;
+    padding: 16px 28px;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .nl-btn:hover { background: var(--coral-deep); }
+  .nl-fine {
+    margin-top: 16px;
+    font-size: 11px;
+    color: var(--ink-light);
+    letter-spacing: 0.1em;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    background: var(--ink-deep);
+    color: var(--ink-light);
+    padding: 72px 48px 32px;
+    font-size: 12px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(245, 232, 208, 0.15);
+  }
+  .footer-brand .brand-mark { font-size: 26px; color: var(--sand-pale); }
+  .footer-brand .brand-mark em { color: var(--sand-warm); }
+  .footer-tagline {
+    margin-top: 18px;
+    color: rgba(245, 232, 208, 0.7);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 14px;
+    max-width: 320px;
+    line-height: 1.7;
+  }
+  .footer-col h4 {
+    font-family: 'Fraunces', serif;
+    color: var(--sand-pale);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 18px;
+    letter-spacing: 0.06em;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .footer-col a {
+    color: rgba(245, 232, 208, 0.6);
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--sand-warm); }
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 32px auto 0;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(245, 232, 208, 0.5);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  /* Responsive */
+  @media (max-width: 880px) {
+    header { padding: 16px 24px; }
+    nav { display: none; }
+    .hero { padding: 60px 24px 80px; min-height: auto; }
+    .hero-content { grid-template-columns: 1fr; gap: 60px; }
+    .hero-text { padding-left: 0; }
+    .how { padding: 80px 24px; }
+    .how-steps { grid-template-columns: 1fr; }
+    .how-step { border-right: none; border-bottom: 1px solid var(--border); }
+    .how-step:last-child { border-bottom: none; }
+    .collection { padding: 80px 24px; }
+    .products-grid { grid-template-columns: 1fr; gap: 16px; }
+    .story { padding: 80px 24px; }
+    .story-pillars { grid-template-columns: 1fr; gap: 32px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+    .footer-bottom { flex-direction: column; gap: 8px; }
+    .hero-marks { flex-wrap: wrap; gap: 28px; }
+    .sun { width: 180px; height: 180px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <strong>FREE U.S. SHIPPING OVER $40</strong>
+  <span class="dot">·</span>
+  NEW · SAGE & SAND HARVEST EDITION
+  <span class="dot">·</span>
+  SHIPS FROM LOS ANGELES
+</div>
+
+<header>
+  <div class="brand">
+    <div class="brand-mark">DUNE <em>PAPER</em></div>
+    <div class="brand-tag">Made on the coast</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#collection">Shop</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#story">Our story</a></li>
+      <li><a href="#">Journal</a></li>
+    </ul>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn">Account</button>
+    <button class="icon-btn">Cart (0)</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="sun"></div>
+  <div class="horizon-line"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-ornament">
+        <div class="line"></div>
+        <span>Slow-burning incense paper · Hand-folded</span>
+      </div>
+      <h1 class="hero-title">
+        Light it.<br>
+        <span class="italic">Slow down.</span>
+      </h1>
+      <p class="hero-sub">
+        Dune Paper makes small paper strips infused with botanical oils.
+        Tear one. Light it. Set it on a dish. Eight minutes of scent —
+        then back to your afternoon.
+      </p>
+      <div class="hero-cta-row">
+        <button class="btn-primary">Shop the Collection</button>
+        <button class="btn-secondary">How it works</button>
+      </div>
+      <div class="hero-marks">
+        <div>
+          <div class="hero-mark-num">8 min</div>
+          <div class="hero-mark-label">Burn time</div>
+        </div>
+        <div>
+          <div class="hero-mark-num">30</div>
+          <div class="hero-mark-label">Strips per book</div>
+        </div>
+        <div>
+          <div class="hero-mark-num">$18</div>
+          <div class="hero-mark-label">Per book</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-product">
+      <div class="paper-stack">
+        <div class="booklet booklet-1">
+          <div class="booklet-top">
+            <div class="booklet-mark">d.</div>
+            <div class="booklet-line"></div>
+            <div class="booklet-no">No. 02</div>
+            <div class="booklet-name">Sea Fig</div>
+          </div>
+          <div class="booklet-bottom">
+            <div class="booklet-spec">30 Strips</div>
+            <div class="booklet-burn">8 min · each</div>
+          </div>
+        </div>
+        <div class="booklet booklet-2">
+          <div class="booklet-top">
+            <div class="booklet-mark">d.</div>
+            <div class="booklet-line"></div>
+            <div class="booklet-no">No. 01</div>
+            <div class="booklet-name">Salt Air</div>
+          </div>
+          <div class="booklet-bottom">
+            <div class="booklet-spec">30 Strips</div>
+            <div class="booklet-burn">8 min · each</div>
+          </div>
+        </div>
+        <div class="booklet booklet-3">
+          <div class="booklet-top">
+            <div class="booklet-mark">d.</div>
+            <div class="booklet-line"></div>
+            <div class="booklet-no">No. 03</div>
+            <div class="booklet-name">Golden Hour</div>
+          </div>
+          <div class="booklet-bottom">
+            <div class="booklet-spec">30 Strips</div>
+            <div class="booklet-burn">8 min · each</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-caption">
+        "Hand-folded books<br>
+        from Long Beach,<br>
+        California."
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how" id="how">
+  <div class="how-inner">
+    <div class="section-eyebrow">
+      <div class="line"></div>
+      <span>How it works</span>
+      <div class="line"></div>
+    </div>
+    <h2 class="section-title">Three steps. <span class="italic">Eight minutes.</span></h2>
+    <p class="section-sub">
+      Each book holds thirty paper strips, accordion-folded and infused with
+      essential oils. Tear, light, and let the smolder do the work — no flame,
+      no wax, no wick to trim.
+    </p>
+
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-num">01.</div>
+        <div class="how-title">Tear one strip.</div>
+        <div class="how-text">
+          Open the book. Pull off one paper accordion strip along the
+          perforated edge. Re-fold so it stands on its own.
+        </div>
+        <div class="how-burn-time">— Takes 5 seconds</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">02.</div>
+        <div class="how-title">Light. Then blow out.</div>
+        <div class="how-text">
+          Set it on a heatproof dish. Touch a match to the top edge and let
+          it catch. After a few seconds, blow out the flame — it will smolder
+          on its own.
+        </div>
+        <div class="how-burn-time">— Smolders, doesn't burn</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">03.</div>
+        <div class="how-title">Eight minutes of scent.</div>
+        <div class="how-text">
+          The strip releases warm botanical smoke for about eight minutes,
+          then turns to a clean ash. Empty the dish. Done.
+        </div>
+        <div class="how-burn-time">— No wax · No wick · No residue</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT COLLECTION ============ -->
+<section class="collection" id="collection">
+  <div class="collection-inner">
+    <div class="section-eyebrow">
+      <div class="line"></div>
+      <span>The Collection</span>
+      <div class="line"></div>
+    </div>
+    <h2 class="section-title">Six scents. <span class="italic">One coast.</span></h2>
+    <p class="section-sub">
+      Each scent is built around a single afternoon on the Pacific —
+      what it smells like, what it sounds like, what it does to your shoulders.
+    </p>
+
+    <div class="products-grid">
+      <div class="product-card pc-1">
+        <div class="pc-visual">
+          <div class="pc-booklet">
+            <div class="pc-booklet-top">
+              <div class="pc-booklet-mark">d.</div>
+              <div class="pc-booklet-line"></div>
+              <div class="pc-booklet-no">No. 01</div>
+              <div class="pc-booklet-name">Salt Air</div>
+            </div>
+            <div class="pc-booklet-spec">30 strips</div>
+          </div>
+        </div>
+        <div class="pc-info">
+          <div class="pc-no">No. 01</div>
+          <div class="pc-name">Salt Air</div>
+          <div class="pc-notes">Driftwood · Sea spray · Cedar</div>
+          <div class="pc-price-row">
+            <div class="pc-price">
+              <span class="dollar">$</span>18
+              <span class="count">30 strips</span>
+            </div>
+            <button class="pc-add">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card pc-2">
+        <div class="pc-visual">
+          <div class="pc-booklet">
+            <div class="pc-booklet-top">
+              <div class="pc-booklet-mark">d.</div>
+              <div class="pc-booklet-line"></div>
+              <div class="pc-booklet-no">No. 02</div>
+              <div class="pc-booklet-name">Sea Fig</div>
+            </div>
+            <div class="pc-booklet-spec">30 strips</div>
+          </div>
+        </div>
+        <div class="pc-info">
+          <div class="pc-no">No. 02</div>
+          <div class="pc-name">Sea Fig</div>
+          <div class="pc-notes">Green fig · Linen · Coastal breeze</div>
+          <div class="pc-price-row">
+            <div class="pc-price">
+              <span class="dollar">$</span>18
+              <span class="count">30 strips</span>
+            </div>
+            <button class="pc-add">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card pc-3">
+        <div class="pc-visual">
+          <div class="pc-booklet">
+            <div class="pc-booklet-top">
+              <div class="pc-booklet-mark">d.</div>
+              <div class="pc-booklet-line"></div>
+              <div class="pc-booklet-no">No. 03</div>
+              <div class="pc-booklet-name">Golden Hour</div>
+            </div>
+            <div class="pc-booklet-spec">30 strips</div>
+          </div>
+        </div>
+        <div class="pc-info">
+          <div class="pc-no">No. 03</div>
+          <div class="pc-name">Golden Hour</div>
+          <div class="pc-notes">Amber · Tobacco flower · Warm sand</div>
+          <div class="pc-price-row">
+            <div class="pc-price">
+              <span class="dollar">$</span>20
+              <span class="count">30 strips</span>
+            </div>
+            <button class="pc-add">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card pc-4">
+        <div class="pc-visual">
+          <div class="pc-booklet">
+            <div class="pc-booklet-top">
+              <div class="pc-booklet-mark">d.</div>
+              <div class="pc-booklet-line"></div>
+              <div class="pc-booklet-no">No. 04</div>
+              <div class="pc-booklet-name">Yucca</div>
+            </div>
+            <div class="pc-booklet-spec">30 strips</div>
+          </div>
+        </div>
+        <div class="pc-info">
+          <div class="pc-no">No. 04</div>
+          <div class="pc-name">Yucca</div>
+          <div class="pc-notes">Desert sage · Palo santo · Dry grass</div>
+          <div class="pc-price-row">
+            <div class="pc-price">
+              <span class="dollar">$</span>18
+              <span class="count">30 strips</span>
+            </div>
+            <button class="pc-add">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card pc-5">
+        <div class="pc-visual">
+          <div class="pc-booklet">
+            <div class="pc-booklet-top">
+              <div class="pc-booklet-mark">d.</div>
+              <div class="pc-booklet-line"></div>
+              <div class="pc-booklet-no">No. 05</div>
+              <div class="pc-booklet-name">Tidepool</div>
+            </div>
+            <div class="pc-booklet-spec">30 strips</div>
+          </div>
+        </div>
+        <div class="pc-info">
+          <div class="pc-no">No. 05</div>
+          <div class="pc-name">Tidepool</div>
+          <div class="pc-notes">Vetiver · Seaweed · Wet stone</div>
+          <div class="pc-price-row">
+            <div class="pc-price">
+              <span class="dollar">$</span>22
+              <span class="count">30 strips</span>
+            </div>
+            <button class="pc-add">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card pc-6">
+        <div class="pc-visual">
+          <div class="pc-booklet">
+            <div class="pc-booklet-top">
+              <div class="pc-booklet-mark">d.</div>
+              <div class="pc-booklet-line"></div>
+              <div class="pc-booklet-no">No. 06</div>
+              <div class="pc-booklet-name">Long Beach</div>
+            </div>
+            <div class="pc-booklet-spec">30 strips</div>
+          </div>
+        </div>
+        <div class="pc-info">
+          <div class="pc-no">No. 06</div>
+          <div class="pc-name">Long Beach</div>
+          <div class="pc-notes">Citrus · Suntan oil · Boardwalk</div>
+          <div class="pc-price-row">
+            <div class="pc-price">
+              <span class="dollar">$</span>20
+              <span class="count">30 strips</span>
+            </div>
+            <button class="pc-add">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND STORY ============ -->
+<section class="story" id="story">
+  <div class="story-inner">
+    <div class="section-eyebrow">
+      <div class="line"></div>
+      <span>Our story</span>
+      <div class="line"></div>
+    </div>
+    <h2 class="story-title">
+      We started with one question:<br>
+      <span class="italic">why does a candle take three hours?</span>
+    </h2>
+    <div class="story-body">
+      <p>
+        Most home scent is built for the wrong moment. A candle wants a long
+        evening. A diffuser hangs around for weeks. <em>We wanted something
+        that lasts as long as a cup of coffee</em> — and disappears when
+        you're done with it.
+      </p>
+      <p>
+        Dune Paper is folded by hand in Long Beach, California. Each strip
+        is one accordion of textured paper, dipped in a blend of essential
+        oils and saltpeter. Eight minutes of warm botanical smoke. No wax,
+        no wick, no half-burned guilt sitting on your counter.
+      </p>
+    </div>
+
+    <div class="story-pillars">
+      <div class="story-pillar">
+        <div class="pillar-num">— I —</div>
+        <div class="pillar-title">Made on the coast</div>
+        <div class="pillar-text">
+          Hand-folded in our Long Beach studio. Small batches.
+          You can tell — the paper is never quite the same twice.
+        </div>
+      </div>
+      <div class="story-pillar">
+        <div class="pillar-num">— II —</div>
+        <div class="pillar-title">Eight minute scent</div>
+        <div class="pillar-text">
+          Long enough to read a chapter. Short enough that it doesn't
+          haunt your apartment for three days.
+        </div>
+      </div>
+      <div class="story-pillar">
+        <div class="pillar-num">— III —</div>
+        <div class="pillar-title">No wax, no waste</div>
+        <div class="pillar-text">
+          Strips burn to clean ash. The booklet is fully recyclable.
+          Nothing to throw out except a small dish of dust.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter">
+  <div class="nl-inner">
+    <h2 class="nl-title">Slow down. <span class="italic">In your inbox.</span></h2>
+    <p class="nl-sub">
+      New scents, small drops, the occasional letter from the coast.
+      No more than once a month. Promise.
+    </p>
+    <form class="nl-form" onsubmit="event.preventDefault();">
+      <input type="email" class="nl-input" placeholder="your@email.com" />
+      <button type="submit" class="nl-btn">Subscribe</button>
+    </form>
+    <div class="nl-fine">10% off your first book · No spam, ever</div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-mark">DUNE <em>PAPER</em></div>
+      <div class="footer-tagline">
+        "Hand-folded incense paper from Long Beach, California.
+        Eight minutes of scent — that's all you need."
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#">All Scents</a></li>
+        <li><a href="#">Sample Pack</a></li>
+        <li><a href="#">Gift Sets</a></li>
+        <li><a href="#">Burner Dishes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">Our story</a></li>
+        <li><a href="#">How it's made</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dune Paper · Made in Long Beach, CA</span>
+    <span>Burn responsibly · Never leave unattended</span>
+  </div>
+</footer>
+
+</body>
+</html>
